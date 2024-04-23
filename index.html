@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game">
+
+        <h1>Rock Paper Scissors</h1>
+        <div class="container">
+            <button onclick="
+                userMove='Rock';
+                generateComputerMove();
+                console.log(computerMove, userMove)
+            ">
+                <img src="./resources/images/rock.png" alt="">
+            </button>
+            <button onclick="
+                userMove='Paper';
+                generateComputerMove();
+                console.log(computerMove, userMove)
+            ">
+                <img src="./resources/images/paper.png" alt="">
+            </button>
+            <button onclick="
+                userMove='Scissors';
+                generateComputerMove();
+                console.log(computerMove, userMove)
+            ">
+                <img src="./resources/images/scissors.png" alt="">
+            </button>
+            <button id="reset-btn" onclick="resetGame()">
+                <img src="./resources/images/reset.jpg" alt="">
+            </button>
+        </div>
+
+        <h2>Game Summary</h2>
+        <table>
+            <tr>
+                <th>Wins</th>
+                <th>Loses</th>
+                <th>Ties</th>
+                <th>Games played</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+
+        <h2>Game History</h2>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>user Move</th>
+                <th>Computer Move</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
